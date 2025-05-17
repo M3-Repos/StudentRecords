@@ -24,15 +24,7 @@
        PROCEDURE DIVISION.
        MAIN.
            PERFORM BANNER.
-           DISPLAY "--STUDENT ID--"
-           DISPLAY "STUDENT ID: " WITH NO ADVANCING
-           ACCEPT STUDENT-ID
-           DISPLAY " "
-           DISPLAY "--STUDENT NAME--"
-           DISPLAY "FIRST NAME: "  WITH NO ADVANCING
-           ACCEPT FIRST-NAME
-           DISPLAY "LAST NAME: " WITH NO ADVANCING
-           ACCEPT LAST-NAME
+           PERFORM INPUT-RECORD.
            GOBACK.
 
        BANNER.
@@ -46,5 +38,16 @@
            DISPLAY "                                          "
            DISPLAY " ***************************************  "
            DISPLAY "                                          ".
+
+       INPUT-RECORD.
+           DISPLAY "--STUDENT ID--"
+           DISPLAY "STUDENT ID: " WITH NO ADVANCING
+           ACCEPT STUDENT-ID
+           DISPLAY " "
+           DISPLAY "--STUDENT NAME--"
+           DISPLAY "FIRST NAME: "  WITH NO ADVANCING
+           ACCEPT FIRST-NAME
+           DISPLAY "LAST NAME: " WITH NO ADVANCING
+           ACCEPT LAST-NAME.
 
 
